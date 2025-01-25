@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>వెబ్‌పేజీ డిజైన్</title>
+    <link rel="stylesheet" href="style copy.css">
+    <!-- Link to Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+       
+       
+    </style>
+</head>
+<body id="top">
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <!-- Make logo clickable and reload the page -->
+                <a href="javascript:void(0);" onclick="location.reload();"><h2 class="logo">GrowNet</h2></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" id="home-link">హోమ్</a></li>
+                    <li><a href="markets.html" onclick="showContent('markets')">మార్కెట్లు</a></li>
+                    <li><a href="jobs.html" onclick="showContent('jobs')">ఉద్యోగాలు</a></li>
+                    <li><a href="https://bhuvan17.ccbp.tech/" target="_blank" onclick="showContent('chatbot')">చాట్‌బాట్</a></li>
+                </ul>
+            </div>
+        </div> 
+        
+        <!-- Content Section (Market and Job Cards) -->
+        <div class="content">
+
+            <h2 style="color: #ffeb3b;">మార్కెట్లు కనుగొనండి</h2>
+
+            <!-- Market Cards Section -->
+            <div class="card-container">
+                <div class="card">
+                    <i class="fas fa-store"></i>
+                    <h3>రిటైల్ మార్కెట్</h3>
+                    <p>స్థానిక దుకాణాలు మరియు ఆన్‌లైన్ షాపింగ్ ప్లాట్‌ఫారమ్‌ల నుండి విభిన్న ఉత్పత్తులు మరియు సేవలను అన్వేషించండి.</p>
+                    <button class="explore-btn" onclick="window.location.href='retailtel.html';">మరింత తెలుసుకోండి</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>స్టాక్ మార్కెట్</h3>
+                    <p>స్టాక్ ట్రేడింగ్, మార్కెట్ విశ్లేషణ, మరియు పెట్టుబడి అవకాశాలపై సమాచారం పొందండి.</p>
+                    <button class="explore-btn" onclick="window.location.href='stock.html';">మరింత తెలుసుకోండి</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>లీగల్ మార్కెట్</h3>
+                    <p>చట్ట సేవలు, న్యాయ సంస్థలు, సలహాలు మరియు వివిధ రంగాల కోసం కన్సల్టెన్సీని కనుగొనండి.</p>
+                    <button class="explore-btn" onclick="window.location.href='legal.html';">మరింత తెలుసుకోండి</button>
+                </div>
+            </div>
+            <h2 style="color:#ffeb3b;">ఉద్యోగాలను కనుగొనండి</h2>
+            <!-- Job Cards Section -->
+
+            <div class="card-container">
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>సాఫ్ట్‌వేర్ డెవలపర్</h3>
+                    <p>సాఫ్ట్‌వేర్ డెవలపర్‌గా టెక్ ప్రపంచంలో చేరండి, తాజా సాధనాలు మరియు టెక్నాలజీలతో పని చేయండి.</p>
+                    <button class="explore-btn" onclick="window.location.href='softtel.html';">మరింత తెలుసుకోండి</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>మెకానికల్ ఇంజినీర్</h3>
+                    <p>వివిధ పరిశ్రమలు మరియు అప్లికేషన్ల కోసం యంత్రాల వ్యవస్థలను రూపొందించండి, నిర్మించండి మరియు నిర్వహించండి.</p>
+                    <button class="explore-btn" onclick="window.location.href='mech.html';">మరింత తెలుసుకోండి</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>గ్రాఫిక్ డిజైనర్</h3>
+                    <p>క్రియేటివిటీని ఉపయోగించి వెబ్‌సైట్‌లు, ప్రకటనలు, మరియు బ్రాండింగ్ కోసం అద్భుతమైన విజువల్ కంటెంట్ రూపొందించండి.</p>
+                    <button class="explore-btn" onclick="window.location.href='graphic.html';">మరింత తెలుసుకోండి</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Content is hidden by default on page load
+            document.getElementById('home-link').addEventListener('click', function() {
+                var content = document.getElementById('content');
+                if (content.style.display === 'none' || content.style.display === '') {
+                    content.style.display = 'block';  // Show the content
+                } else {
+                    content.style.display = 'none';   // Hide the content
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

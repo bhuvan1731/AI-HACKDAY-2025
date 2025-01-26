@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style copy.css">
+    <!-- Link to Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+       
+       
+    </style>
+</head>
+<body id="top">
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <!-- Make logo clickable and reload the page -->
+                <a href="javascript:void(0);" onclick="location.reload();"><h2 class="logo">GrowNet</h2></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" onclick="showContent('home')">హోమ్</a></li>
+                    <li><a href="#" onclick="showContent('markets')">మార్కెట్లు</a></li>
+                    <li><a href="#" onclick="showContent('jobs')">ఉద్యోగాలు</a></li>
+                    <li>
+                        <a href="#" onclick="showContent('chatbot')">
+                            <i class="fas fa-robot" style="font-size: 20px; margin-right: 5px;"></i>
+                            చాట్‌బాట్
+                        </a>
+                    </li>
+                    <li><a href="registertel.html">నమోదు</a></li>
+                </ul>
+            </div>    
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+          
+    
+            <div class="location-box">
+                <button class="location-btn">
+                    <p id="location">Loading location...</p>
+                </button>
+            </div>
+
+        </div> 
+        
+        <!-- Content Section (Market and Job Cards) -->
+        <div class="content">
+
+            <h2 style="color:#ffeb3b;">Find Markets</h2>
+
+            <div class="content">
+
+                <h2 style="color:#ffeb3b;">మార్కెట్లను కనుగొనండి</h2>
+    
+                <!-- మార్కెట్ కార్డులు విభాగం -->
+                <div class="card-container">
+                    <div class="card">
+                        <i class="fas fa-store"></i>
+                        <h3>రిటైల్ మార్కెట్</h3>
+                        <p>ప్రాంతీయ అంగడుల నుండి మరియు ఆన్‌లైన్ షాపింగ్ ప్లాట్‌ఫారమ్‌ల నుండి విభిన్న ఉత్పత్తులు మరియు సేవలను అన్వేషించండి.</p>
+                        <button class="explore-btn" onclick="window.location.href='registertel.html';">మరింత అన్వేషించండి</button>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>స్టాక్ మార్కెట్</h3>
+                        <p>స్టాక్ ట్రేడింగ్, మార్కెట్ విశ్లేషణ, మరియు పెట్టుబడి అవకాశాలపై అవగాహన పొందండి.</p>
+                        <button class="explore-btn" onclick="window.location.href='registertel.html';">మరింత అన్వేషించండి</button>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>న్యాయ మార్కెట్</h3>
+                        <p>వివిధ రంగాలలో లా ఫిర్ములు, సలహాలు మరియు కన్సల్టెన్సీలను అన్వేషించండి.</p>
+                        <button class="explore-btn" onclick="window.location.href='registertel.html';">మరింత అన్వేషించండి</button>
+                    </div>
+                </div>
+                <h2 style="color:#ffeb3b;">ఉద్యోగాలు కనుగొనండి</h2>
+                <!-- ఉద్యోగ కార్డులు విభాగం -->
+    
+                <div class="card-container">
+                    <div class="card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>సాఫ్ట్‌వేర్ డెవలపర్</h3>
+                        <p>టెక్నాలజీ ప్రపంచంలో చేరండి, తాజా సాధనాలు మరియు సాంకేతికతలతో పని చేయండి.</p>
+                        <button class="explore-btn" onclick="window.location.href='registertel.html';">మరింత అన్వేషించండి</button>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>మెకానికల్ ఇంజినీర్</h3>
+                        <p>వివిధ పరిశ్రమలు మరియు అనువర్తనాల కోసం యంత్రసంస్కరణలు, నిర్మాణం మరియు నిర్వహణ చేయండి.</p>
+                        <button class="explore-btn" onclick="window.location.href='registertel.html';">మరింత అన్వేషించండి</button>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>గ్రాఫిక్ డిజైనర్</h3>
+                        <p>వెబ్‌సైట్‌లు, ప్రకటనలు మరియు బ్రాండింగ్ కోసం అద్భుతమైన విజువల్ కంటెంట్ సృష్టించడానికి సృజనాత్మకతను ఉపయోగించండి.</p>
+                        <button class="explore-btn" onclick="window.location.href='registertel.html';">మరింత అన్వేషించండి</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script>if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            // Use OpenStreetMap Nominatim API for reverse geocoding
+            const apiUrl = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Extract the area, neighborhood, or district from the address components
+                    let area = null;
+
+                    // Look for area, neighborhood, or district
+                    if (data.address.suburb) {
+                        area = data.address.suburb;  // Suburb/neighborhood
+                    } else if (data.address.city) {
+                        area = data.address.city;  // City
+                    } else if (data.address.district) {
+                        area = data.address.district;  // District
+                    }
+
+                    // Display the area or place
+                    if (area) {
+                        document.getElementById("location").innerText = `You are in: ${area}`;
+                    } else {
+                        document.getElementById("location").innerText = "Area not recognized.";
+                    }
+                })
+                .catch(error => {
+                    document.getElementById("location").innerText = "Unable to retrieve your location.";
+                });
+        }, function(error) {
+            document.getElementById("location").innerText = "Unable to retrieve your location.";
+        });
+    } else {
+        document.getElementById("location").innerText = "Geolocation is not supported by your browser.";
+    }
+    const texts = ["Translate the Page", "భాషను మార్చండి"];
+let currentTextIndex = 0;
+
+// Function to change the button text
+
+        </script>
+</body>
+</html>
